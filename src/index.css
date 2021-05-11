@@ -11,3 +11,125 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 400px;
+  top: 0px;
+  text-align: center;
+  background-image: url('./assets/keyboard_header.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  font-size: 56px;
+  margin-top: 100px;
+  align-self: center;
+}
+
+.info-part {
+  margin: 50px;
+  padding: 30px;
+  align-self: left;
+}
+
+.site-info {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.site-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.button-back {
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-wrapper {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-text {
+  margin: 20px;
+}
+
+.site-details {
+  background-color: #F4D8CB;
+  color: black;
+  border: 2px solid #98A7B2;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  width: 60%;
+  margin: 15px;
+  padding: 25px;
+  font-size: 18px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:link:active,
+a:visited:active {
+  text-decoration: none;
+  color: black;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 767px) {
+
+  .site-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .site-info {
+    font-size: 24px;
+    margin: 20px;
+  }
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .site-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  
+  
+  }
