@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-const SiteCard = ({ name, type, language, _id, programming_language, free_or_paid, url, topic }) => {
+const SiteCard = ({ name, type, language, siteId, programming_language, free_or_paid, url, topic }) => {
     return (
       <> 
-      <Link to={`/techsites/${_id}`}>
+      <Link to={`/techsites/${siteId}`}>
           <div className="site-details">
             
             <h2>{name}</h2>
