@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react"
 import { Link, useParams } from "react-router-dom"
 
  export const SingleSite = () => {
-  const { siteId } = useParams()
+  const { _id } = useParams()
   const [siteDetails, setSiteDetails] = useState({})
 
   useEffect(() => {
     fetch(
-      `https://techsites.herokuapp.com/techsites/${siteId}`
+      `https://techsites.herokuapp.com/techsites/${_id}`
     )
       .then((response) => response.json())
       .then((json) => setSiteDetails(json))
-  }, [siteId])
+  }, [_id])
 
   return (
     <>
