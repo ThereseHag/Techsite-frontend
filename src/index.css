@@ -18,7 +18,7 @@ code {
   height: 400px;
   top: 0px;
   text-align: center;
-  background-image: url('./assets/keyboard_header.jpg');
+  background-image: url("./assets/keyboard_header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +33,7 @@ h1 {
 
 .info-part {
   margin: 50px;
-  padding: 30px;
+  padding: 20px;
   align-self: left;
 }
 
@@ -59,29 +59,34 @@ h1 {
 
 .main-wrapper {
   padding: 20px;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-image: url("./assets/linen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .info-text {
   margin: 20px;
+  font-size: 18px;
 }
 
 .site-details {
-  background-color: #F4D8CB;
-  color: black;
-  border: 2px solid #98A7B2;
+  background-color: #f4d8cb;
+  color: #000;
+  border: 2px solid #98a7b2;
   -webkit-box-shadow: 0 15px 10px #777;
   -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
   width: 60%;
   margin: 15px;
-  padding: 25px;
+  padding: 30px;
   font-size: 18px;
-  display: flex; 
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -105,14 +110,32 @@ a:visited:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('./assets/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #98a7b2;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.button {
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 60px;
+  background-color: #f4d8cb;
+  border: 2px solid #98a7b2;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
 }
 
 @media (min-width: 767px) {
-
   .site-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,14 +145,11 @@ a:visited:active {
     font-size: 24px;
     margin: 20px;
   }
+}
+
+@media (min-width: 1200px) {
+  .site-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  
-  @media (min-width: 1200px) {
-  
-    .site-card-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  
-  
-  }
+}

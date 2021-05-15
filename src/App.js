@@ -4,6 +4,16 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import SiteList from 'components/SiteList'
 import { SingleSite } from './pages/SingleSite'
+import { Kids } from 'pages/Kids'
+import { Blogs } from 'pages/Blogs'
+import { Challenges } from 'pages/Challenges'
+import { Learning } from 'pages/Learning'
+import { Education } from 'pages/Education'
+import { Youtube } from 'pages/Youtube'
+import { Tech } from 'pages/Tech'
+import { Communities } from 'pages/Communities'
+import { Guide } from 'pages/Guide'
+import { Repository } from 'pages/Repository'
 
 export const App = () => {
   return (
@@ -17,9 +27,38 @@ export const App = () => {
           <SiteList />
         </Route>
         <Route path='/techsites/:_id'>
-          <SingleSite />
-          
+          <SingleSite />          
         </Route>
+        <Route path='/Kids'>
+          <Kids />
+          </Route>
+          <Route path='/Blogs'>
+          <Blogs />
+          </Route>
+          <Route path='/Challenges'>
+          <Challenges />
+          </Route>
+          <Route path='/Learning'>
+          <Learning />
+          </Route>
+          <Route path='/Education'>
+          <Education />
+          </Route>
+          <Route path='/Youtube'>
+          <Youtube />
+          </Route>
+          <Route path='/Tech'>
+          <Tech />
+          </Route>
+          <Route path='/Communities'>
+          <Communities />
+          </Route>
+          <Route path='/Guide'>
+          <Guide />
+          </Route>
+          <Route path='/Repository'>
+          <Repository />
+          </Route>
         </Switch>
         </BrowserRouter>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import SiteCard from "components/SiteCard"
+import Buttons from "components/Buttons"
 
 const SiteList = () => {
   const [sites, setSites] = useState([])
@@ -29,7 +30,11 @@ const SiteList = () => {
         <p className="info-text">
           Click on each card in order to find out more details about that specific resource. You're up for a lot of fun!
         </p>
+        <p className="info-text">
+          If you already know what kind of website you'd like to see, you can go directly to the right category by clicking one of the buttons below.
+        </p>
       </div>
+      <Buttons />
       <div className="site-card-container">
         {sites && sites.map((site) => <SiteCard {...site} key={site._id} />)}
       </div>
