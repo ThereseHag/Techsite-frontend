@@ -1,19 +1,12 @@
-# Technigo React Starter App
+# Techsite frontend
 
-This app has been generated using `create-react-app`, then cleaned up a little so we have a project with just the elements we need to get started.
+I created this React app as a frontend to a backend I created myself. It displays a collection of techsites, mostly with focus on programming.
 
-Add components in the `src` folder and use them in `src/app.js` to get started.
+## Procedure
 
-## Usage
+I started with creating a dataset, deploying it to Heroku and setting up a MongoDB for the project. I then set up this frontend in order to test my API, and to be able to show the data, since I think a good tech site resource is definitely something that could be of use to plenty of people. I've also published my API documentation here, so that all who wants to use the API can do so. 
 
-1. On GitHub, click the 'use this template' button to create a new repo on your account
-1. Clone the new repo to your computer
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+## View it live
 
-Alternatively, if you don't want a new git repo on your account;
-
-1. Download & extract the [latest release](https://github.com/Technigo/react-starter/releases/latest) from GitHub
-1. Open the directory in the terminal: `cd /path/to/react-starter`
-1. Install required dependencies with npm: `npm install`
-1. Start the project: `npm start`
+The deployed project can be seen here:
+https://techsite-collection.netlify.app/
