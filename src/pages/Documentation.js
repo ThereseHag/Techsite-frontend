@@ -61,18 +61,33 @@ export const Documentation = () => {
         <p>
           The query parameters can be applied to /techsites to filter data if
           you want to get techsites with a specific topic, such as forum, code
-          challenges, blog posts etc.
+          challenges, blog posts etc. It is also possible to add a query for
+          free_or_paid to get only the free ones or only the paid ones. Those
+          two queries can be made either separately or together.
         </p>
         <p>
           This can be achieved by using the following (adding the topic you're
           looking for after the equal sign):
-          <p>
-            {" "}
-            <a href="https://techsites.herokuapp.com/techsites?topic=">
-              GET / techsites?topic={" "}
-            </a>{" "}
-          </p>
         </p>
+        <a href="https://techsites.herokuapp.com/techsites?topic=">
+          GET / techsites?topic={" "}
+        </a>
+
+        <p>
+          The following can also be used if you want to check for free or paid
+          techsites.
+        </p>
+        <a href="https://techsites.herokuapp.com/techsites?free_or_paid=">
+          GET / techsites?free_or_paid={" "}
+        </a>
+        <p>
+          If you want to combine both queries, you can applicate it like this
+          (adding your requested topic after ?topic= and either free or paid
+          after the free_or_paid=)
+        </p>
+        <a href="https://techsites.herokuapp.com/techsites?topic=blog&free_or_paid=free">
+          GET / techsites?topic={""}&free_or_paid={" "}
+        </a>
       </div>
     </>
   );
